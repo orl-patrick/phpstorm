@@ -8,9 +8,12 @@ $students = [
     "Nicolas"   => 19,
 ];
 
-var_dump($students);
-
-
-
+echo 'Les valeurs de base sont :<br />';
+foreach ($students as $student => $note) {
+    echo "- $student : $note<br />";
+}
+echo '<br />';
+echo 'La moyenne est : '.array_sum($students)/count($students).'<br />';
+echo '<br />Et hop !';
 
 ?>
