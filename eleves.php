@@ -8,7 +8,7 @@ $students = [
     "Nicolas"   => 19,
 ];
 
-echo 'Les valeurs de base sont :<br />';
+echo 'Les valeurs de base sont :<br /><br />';
 foreach ($students as $student => $note) {
     echo "- $student : $note<br />";
 }
