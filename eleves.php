@@ -1,5 +1,8 @@
 <?php
 
+// --- script devant etre lance dans la console (php eleves.php)
+
+// --- initialisation du tableau
 $students = [
     "Emmanuel"  => 42,
     "Thierry"   => 51,
@@ -8,12 +11,16 @@ $students = [
     "Nicolas"   => 19,
 ];
 
-echo 'Les valeurs de base sont :<br /><br />';
+// --- restitution du tableau
+echo "\nLes notes obtenues par les élèves sont :\n\n";
 foreach ($students as $student => $note) {
-    echo "- $student : $note<br />";
+    echo "- $student : $note\n";
 }
-echo '<br />';
-echo 'La moyenne est : '.array_sum($students)/count($students).'<br />';
-echo '<br />Et hop !';
+
+// --- affichage du resultat
+echo "\n";
+$nbeleves = count($students);
+echo "La moyenne est : ".array_sum($students)/$nbeleves." ($nbeleves élèves)\n";
+echo "\nEt hop !\n\n";
 
 ?>
